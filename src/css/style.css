@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Light-Gray);
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* TITLE */
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-weight: 200;
+    color: var(--Grayish-Blue);
+}
+
+.title span {
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+
+.title p {
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+/* CONTENT */
+
+.content {
+    max-width: 90%;
+    margin: auto;
+}
+
+.content .card-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* CARD */
+
+.content .card-holder .card {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    border-top: 4px solid transparent;
+    box-shadow: 2px 8px 14px 0 hsla(229, 6%, 66%, 0.6);
+}
+
+.content .card-holder .card h3 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+
+.content .card-holder .card p {
+    color: var(--Grayish-Blue);
+    line-height: 1.7;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.content .card-holder .card img {
+    display: block;
+    margin-left: auto;
+}
+
+.content .card-holder .supervisor {
+    border-top-color: var(--Cyan);
+}
+
+.content .card-holder .team {
+    border-top-color: var(--Red);
+}
+
+.content .card-holder .karma {
+    border-top-color: var(--Orange);
+}
+
+.content .card-holder .calculator {
+    border-top-color: var(--Blue);
+}
+
+.supervisor,
+.calculator,
+.grid-center-container {
+    place-self: center;
+}
+
+.grid-center-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    margin-top: 50PX;
+}
+
+footer a {
+    color: var(--Blue);
+}
